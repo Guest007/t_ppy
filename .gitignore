@@ -53,3 +53,9 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# PyCharm
+.idea/
+
+# Project
+project/local_settings.py
