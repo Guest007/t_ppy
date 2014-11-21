@@ -1,3 +1,4 @@
 Django==1.7.1
 sorl-thumbnail
 python-social-auth
+Pillow
