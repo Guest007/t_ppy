@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for post in post_list %}
+
+          <div class="blog-post">
+            <h2 class="blog-post-title"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+            <p class="blog-post-meta">{{ post.created }} by {{ post.author }}</p>
+
+            <p>{{ post.short_body }}</p>
+            <hr>
+
+          </div><!-- /.blog-post -->
+    {% empty %}
+        <p>Нет постов</p>
+    {% endfor %}
+
+{% endblock %}
+
+          <nav>
+            <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </nav>
+
+
+

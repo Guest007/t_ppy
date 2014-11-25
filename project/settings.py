@@ -43,7 +43,6 @@ INSTALLED_APPS = (
 
     'social.apps.django_app.default',
     'easy_thumbnails',
-    'bootstrap3',
 
     'blog',
 
@@ -126,6 +125,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]

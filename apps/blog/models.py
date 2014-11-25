@@ -22,5 +22,9 @@ class Post(models.Model):
         verbose_name = "Blog's Post"
         verbose_name_plural = "Posts"
 
-    def get_(self):
-        pass
+    def __unicode__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return "/blog/%i/" % self.id
+

@@ -1,5 +1,5 @@
 Django==1.7.1
-sorl-thumbnail
+easy-thumbnails
 python-social-auth
 Pillow
 django-bootstrap3
