@@ -81,6 +81,13 @@ TEMPLATE_DIRS = [
     os.path.join(BASE_DIR, 'templates')
 ]
 
+THUMBNAIL_ALIASES = {
+    '': {
+        'small': {'size': (80, 80), 'crop': False},
+        'medium': {'size': (120, 120), 'crop': False},
+    },
+}
+
 # Real keys must be in local settings in case of using public repo
 SOCIAL_AUTH_VK_OAUTH2_KEY = ''
 SOCIAL_AUTH_VK_OAUTH2_SECRET = ''

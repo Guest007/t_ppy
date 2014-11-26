@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load thumbnail %}
 
 {% block content %}
     <div class="blog-post">
@@ -6,7 +7,8 @@
         <h2 class="blog-post-title"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
         <p class="blog-post-meta">{{ post.created }} by {{ post.author }}</p>
 
-        <p>{{ post.body }}</p>
+        <img src="{{ post.image|thumbnail_url:'medium' }}" class="img-thumbnail">
+        {{ post.body }}
         <hr>
 
     </div><!-- /.blog-post -->
