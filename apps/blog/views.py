@@ -6,10 +6,7 @@ from django.views.generic import ListView, DetailView
 
 class PostsListView(ListView):
     model = Post
-
-    def get_paginate_by(self, queryset):
-        return (self.request.GET.get('per_page') or
-                super(PostsListView, self).get_paginate_by(queryset))
+    paginate_by = 2
 
 
 class PostDetailView(DetailView):

@@ -16,7 +16,8 @@
     {% endfor %}
 
 {% endblock %}
-
+{{ page_obj.number }}
+    {{ page_obj.paginator.num_pages }}
           <nav>
             <ul class="pager">
               <li><a href="#">Previous</a></li>
